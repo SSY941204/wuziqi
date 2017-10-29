@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="wuziqi.css">
+    <script src="wuziqi.js"></script>
+</head>
+<body>
+    <div class="w">五子棋游戏</div>
+    <input type="button" value="开始游戏" id="start">
+    <div class="box">
+        <div class="mode" ><span>模式选择</span></div>
+        <div class="box2">
+            <div class="self">玩家对战<input type="radio" value="" name="mode" checked="checked" id="player"></div>
+            <div class="self">人机对战<input type="radio" value="" name="mode" id="ai"></div>
+        </div>
+        <div class="box2">
+            <span class="clock">本次游戏耗时</span>
+            <p></p>
+        </div>
+        <div class="box2">
+            <span class="min clock">最短耗时<h1></h1></span>
+        </div>
+    </div>
+    <div class="box3">
+        <input type="button" value="重新开始" id="restart" class="setting">
+        <input type="button" value="生成棋谱" id="qp" class="setting">
+        <div class="setting"><a href="" class="xiazai">下载棋谱</a></div>
+    </div>
+    <div class="imgbox"></div>
+    <div class="container">
+        <canvas width="600px" height="600px"></canvas>
+        <div class="mask">
+            <div class="wenzi"></div>
+        </div>
+    </div>
+    <div class="music">
+        <div class="iconfont">&#xe713;</div>
+        <audio src="music.mp3" autoplay loop="loop"></audio>
+    </div>
+</body>
+</html>
